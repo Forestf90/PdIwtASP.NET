@@ -1,0 +1,264 @@
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\ApplicationInsights.config
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\WebForsmsDemo.dll.config
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\WebForsmsDemo.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\WebForsmsDemo.pdb
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csc.exe
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csc.exe.config
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csc.rsp
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csi.exe
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csi.exe.config
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csi.rsp
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.AppContext.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Collections.Immutable.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Console.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.Process.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.Compression.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.Pipes.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Reflection.Metadata.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.AccessControl.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Claims.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Threading.Thread.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.ValueTuple.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XPath.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\vbc.exe
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\vbc.exe.config
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\vbc.rsp
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\VBCSCompiler.exe
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\VBCSCompiler.exe.config
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Antlr3.Runtime.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\AspNet.ScriptManager.jQuery.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.DependencyCollector.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.Web.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.WindowsServer.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ApplicationInsights.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.Web.Infrastructure.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Newtonsoft.Json.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\System.Web.Optimization.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\WebGrease.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\System.Web.Optimization.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Antlr3.Runtime.pdb
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Newtonsoft.Json.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ApplicationInsights.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.DependencyCollector.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.WindowsServer.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.Web.xml
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\pl\System.Web.Optimization.resources.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csprojResolveAssemblyReference.cache
+E:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csproj.CoreCompileInputs.cache
+E:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csproj.CopyComplete
+E:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.dll
+E:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.pdb
+G:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csprojAssemblyReference.cache
+G:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csproj.CoreCompileInputs.cache
+G:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.pdb
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\ApplicationInsights.config
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\WebForsmsDemo.dll.config
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\WebForsmsDemo.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\WebForsmsDemo.pdb
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csc.exe
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csc.exe.config
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csc.rsp
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csi.exe
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csi.exe.config
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\csi.rsp
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.AppContext.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Collections.Immutable.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Console.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.Process.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.Compression.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.IO.Pipes.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Reflection.Metadata.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.AccessControl.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Claims.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Threading.Thread.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.ValueTuple.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XPath.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\vbc.exe
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\vbc.exe.config
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\vbc.rsp
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\VBCSCompiler.exe
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\roslyn\VBCSCompiler.exe.config
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Antlr3.Runtime.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\AspNet.ScriptManager.bootstrap.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\AspNet.ScriptManager.jQuery.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.DependencyCollector.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.Web.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.WindowsServer.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ApplicationInsights.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.FriendlyUrls.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ScriptManager.MSAjax.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ScriptManager.WebForms.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.Web.Infrastructure.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Newtonsoft.Json.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\System.Web.Optimization.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\WebGrease.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\System.Web.Optimization.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Antlr3.Runtime.pdb
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.FriendlyUrls.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Newtonsoft.Json.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.ApplicationInsights.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.DependencyCollector.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.WindowsServer.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\Microsoft.AI.Web.xml
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\pl\System.Web.Optimization.resources.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
+G:\Nowy folder\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csproj.CopyComplete
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\ApplicationInsights.config
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\WebForsmsDemo.dll.config
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\WebForsmsDemo.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\WebForsmsDemo.pdb
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\csc.exe
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\csc.exe.config
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\csc.rsp
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\csi.exe
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\csi.exe.config
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\csi.rsp
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.AppContext.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Console.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.IO.Compression.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Claims.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.ValueTuple.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\vbc.exe
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\vbc.exe.config
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\vbc.rsp
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\VBCSCompiler.exe
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Antlr3.Runtime.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.Web.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Newtonsoft.Json.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\System.Web.Optimization.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\WebGrease.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\System.Web.Optimization.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Antlr3.Runtime.pdb
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Newtonsoft.Json.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\Microsoft.AI.Web.xml
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csprojAssemblyReference.cache
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csproj.CoreCompileInputs.cache
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.csproj.CopyComplete
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.dll
+C:\Users\Forestf\Desktop\AspNet\WebForsmsDemo\obj\Debug\WebForsmsDemo.pdb

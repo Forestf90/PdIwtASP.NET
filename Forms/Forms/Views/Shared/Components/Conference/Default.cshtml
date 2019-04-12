@@ -1,0 +1,53 @@
+﻿@model Forms.Models.PagedList
+
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.conferenceUser.FirstName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.conferenceUser.LastName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.conferenceUser.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.conferenceUser.ConferenceType)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.conferenceUser.Avatar)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.GetConferenceUsers)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FirstName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @*@Html.DisplayFor(modelItem => item.ConferenceType)*@
+                                @if (item.ConferenceType != null)
+                                {
+                                    @ViewBag.ConfereceType[(int)item.ConferenceType].Text
+                                }
+                            </td>
+                            <td>
+                                <img src="@item.Avatar" width="50">
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
