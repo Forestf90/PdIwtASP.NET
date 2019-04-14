@@ -12292,11 +12292,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Forestf\\Desktop\\ASP\\AlaInstagram\\AlaInstagram\\AlaInstagram.csproj",
+      "projectUniqueName": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\AlaInstagram\\AlaInstagram\\AlaInstagram.csproj",
       "projectName": "AlaInstagram",
-      "projectPath": "C:\\Users\\Forestf\\Desktop\\ASP\\AlaInstagram\\AlaInstagram\\AlaInstagram.csproj",
+      "projectPath": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\AlaInstagram\\AlaInstagram\\AlaInstagram.csproj",
       "packagesPath": "C:\\Users\\Forestf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Forestf\\Desktop\\ASP\\AlaInstagram\\AlaInstagram\\obj\\",
+      "outputPath": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\AlaInstagram\\AlaInstagram\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

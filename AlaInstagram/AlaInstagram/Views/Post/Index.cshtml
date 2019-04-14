@@ -9,22 +9,98 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<div class="col-md-4">
-    @foreach(var post in Model)
+@*<div class="col-md-4">*@
+@{ 
+    var postIndex = 0;
+}
+    @foreach (var post in Model)
     {
+
+        postIndex++;
+
         <div class="row">
 
-            @foreach(var tag in post.Tags)
+            @foreach (var tag in post.Tags)
             {
                 <span class="btn btn-primary">@tag</span>
             }
-            <div>
-                <img src="@post.PhotoPath" class="img-responsive"/>
-            </div>
-
         </div>
+
+    <div class="row" >
+        <div class="container">
+            <div id="myCarousel_@postIndex" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                @if (post.PhotosPath.Count() > 1)
+                {
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel_@postIndex" data-slide-to="0" class="active"></li>
+                        @for (int i = 1; i < post.PhotosPath.Count(); i++)
+                        {
+                            <li data-target="#myCarousel_@postIndex" data-slide-to="@i"></li>
+                        }
+
+                    </ol>
+                }
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    @{
+                        string className = "";
+                    }
+                    @foreach (var path in post.PhotosPath)
+                    {
+                        if (post.PhotosPath.First() == path)
+                        {
+                            className = "item active";
+                        }
+                        else
+                        {
+                            className = "item";
+                        }
+                        <div class="@className">
+                            <img src="@path" style="margin:auto; max-height:400px;">
+                            <div class="carousel-caption">
+                                <h3>@post.Title</h3>
+                                <p>
+                                @foreach (var tag in post.Tags)
+                                {
+                                    @tag
+                                    if (post.Tags.LastOrDefault() != tag)
+                                    {
+                                        string temp = "•";
+                                        @temp
+
+                                    }
+                                }
+                                </p>
+                            </div>
+                        </div>
+
+                    }
+
+                </div>
+
+                @if (post.PhotosPath.Count() > 1)
+                {
+                    <a class="left carousel-control" href="#myCarousel_@postIndex" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel_@postIndex" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                }
+                <!-- Left and right controls -->
+
+            </div>
+        </div>
+
+    </div>
+
 
     }
-</div>
-    <div class="row">
-        </div>
+
+
+<div class="row"></div>

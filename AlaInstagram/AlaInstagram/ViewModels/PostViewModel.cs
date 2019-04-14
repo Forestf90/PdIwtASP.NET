@@ -14,6 +14,6 @@ namespace AlaInstagram.ViewModels
         [Required]
         public string CommaSeparatedTags { get; set; }
         [Required]
-        public IFormFile Photo { get; set; }
+        public IFormFileCollection Photos { get; set; }
     }
 }

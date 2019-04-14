@@ -16,7 +16,7 @@
     },
     freeInput: true,
     addOnBlur: true,
-    maxTags: undefined,
+    maxTags: 5,//undefined, 
     maxChars: undefined,
     confirmKeys: [13, 44],
     delimiter: ',',

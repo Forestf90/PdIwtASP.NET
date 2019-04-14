@@ -27,7 +27,7 @@ namespace AlaInstagram.Controllers
             var displayPostViewModels = PublishedPosts.Select(n => new DisplayViewModel
             {
                 Title = n.Title,
-                PhotoPath = n.PhotoPath,
+                PhotosPath = n.PhotosPath,
                 Tags = n.Tags.Select(x => x.Name).ToList()
             });
             return View(displayPostViewModels);
@@ -51,18 +51,22 @@ namespace AlaInstagram.Controllers
                 if (ModelState.IsValid)
                 {
                     var folderName = "upload/";
-                    var savePath = Path.Combine(_enviroment.WebRootPath, folderName,
-                        postViewModel.Photo.FileName);
-
-                    using (var photoFile = new FileStream(savePath, FileMode.Create))
+                    foreach (IFormFile file in postViewModel.Photos)
                     {
-                        postViewModel.Photo.CopyTo(photoFile);
+                        var savePath = Path.Combine(_enviroment.WebRootPath, folderName,
+                                        file.FileName);
+
+                        using (var photoFile = new FileStream(savePath, FileMode.Create))
+                        {
+                            file.CopyTo(photoFile);
+                        }
                     }
+                    //folderName+"/"+postViewModel.Photos.FileName
                     PublishedPosts.Add(new Post
                     {
                         Id = Guid.NewGuid(),
                         Title = postViewModel.Title,
-                        PhotoPath=folderName+"/"+postViewModel.Photo.FileName,
+                        PhotosPath=  postViewModel.Photos.Select(p => folderName + "/" + p.FileName),
                         Tags = postViewModel.CommaSeparatedTags
                         .Split(",")
                         .Select(x => new Tag { Name =x})
