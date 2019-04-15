@@ -13311,11 +13311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Forestf\\Desktop\\ASP\\LAB6_v2\\Forms\\Components.Demo2\\Components.Demo2.csproj",
+      "projectUniqueName": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\Forms\\Components.Demo2\\Components.Demo2.csproj",
       "projectName": "Components.Demo2",
-      "projectPath": "C:\\Users\\Forestf\\Desktop\\ASP\\LAB6_v2\\Forms\\Components.Demo2\\Components.Demo2.csproj",
+      "projectPath": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\Forms\\Components.Demo2\\Components.Demo2.csproj",
       "packagesPath": "C:\\Users\\Forestf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Forestf\\Desktop\\ASP\\LAB6_v2\\Forms\\Components.Demo2\\obj\\",
+      "outputPath": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\Forms\\Components.Demo2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

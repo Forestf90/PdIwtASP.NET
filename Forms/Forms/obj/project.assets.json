@@ -9821,11 +9821,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Forestf\\Desktop\\ASP\\LAB6_v2\\Forms\\Forms\\Forms.csproj",
+      "projectUniqueName": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\Forms\\Forms\\Forms.csproj",
       "projectName": "Forms",
-      "projectPath": "C:\\Users\\Forestf\\Desktop\\ASP\\LAB6_v2\\Forms\\Forms\\Forms.csproj",
+      "projectPath": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\Forms\\Forms\\Forms.csproj",
       "packagesPath": "C:\\Users\\Forestf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Forestf\\Desktop\\ASP\\LAB6_v2\\Forms\\Forms\\obj\\",
+      "outputPath": "C:\\Users\\Forestf\\Desktop\\ASPdotNET\\Forms\\Forms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
