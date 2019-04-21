@@ -15,47 +15,29 @@ namespace AlaInstagram.Controllers
     public class PostController : Controller
     {
         //public static List<Post> PublishedPosts { get; set; } = new List<Post>();
-        private IInstagramData _instagramDate;
+        //private IInstagramData _instagramDate;
         private IHostingEnvironment _enviroment;
 
+        private InstagramContext _context;
         public PostController(IHostingEnvironment enviroment)
         {
             _enviroment = enviroment;
-           // _instagramDate = new MemoryInstagramData();
-            _instagramDate = new EntityInstagramData();
+            //// _instagramDate = new MemoryInstagramData();
+            // _instagramDate = new EntityInstagramData();
+            _context = new InstagramContext();
         }
         // GET: Post
         public ActionResult Index()
         {
-            var displayPostViewModels = _instagramDate.GetPosts().Select(n => new DisplayViewModel
+            var postTag = _context.Tags.SelectMany(g => g.PostTags).Select(qq => qq.Tag);
+            var tagi = postTag.Select(w => w.Name).ToList();
+            var displayPostViewModels = _context.Posts.Select(n => new DisplayViewModel
             {
                 Title = n.Title,
                 PhotosPath = n.PhotosPath,
-                //Tags = n.PostTags.Select(x => x.Tag.Name).ToList()
-                //Tags = n.PostTags.Where(x => x.TagId == x.Tag.Id).Select(y => y.Tag.Name).ToList()
-                //k=> k.PostId==n.Id
-                //Tags = _instagramDate.GetTags().
-                //        Where(m => m.PostTags.
-                //        All(k => k.PostId == n.Id && m.Id == k.TagId)).
-                //        Select(x => x.Name).
-                //        ToList()
-                //Tags = _instagramDate.GetTags().
-                //        Where(o => o.PostTags.
-                //        All(p => p.PostId == n.Id)).
-                //        Where(m => m.PostTags.
-                //        All(k => k.TagId == m.Id)).
-                //        Select(x => x.Name).
-                //        ToList()
-
-                //tagPosts.Where(post => post.PostTags.Any(tag => tag.Tag.Name == selectedTag))
-                //Tags = n.PostTags.Join(_instagramDate.GetTags()
-                //  , x => x.TagId
-                //  , s => s.Id
-                //  , (s, x) => (s,x).ToTuple().Item1.Tag.Name).ToList()
-                   //Select().ToList())
-
-                // Tags = n.PostTags.Where(h=> h.PostId==n.Id).Select(y => y.Tag.Name).ToList()
-                Tags = n.PostTag.Select(c=> c.Tag.Name).ToList()
+                Tags = n.PostTags.Select(c=> c.Tag.Name).ToList()
+                //Tags = _instagramDate.GetTags().Where(l =>l.PostTags.Any(rr => rr.PostId==n.Id)).Select(c => c.Name).ToList()
+                //Tags = tagi
 
             });
 
@@ -92,15 +74,30 @@ namespace AlaInstagram.Controllers
                         }
                     }
                     //folderName+"/"+postViewModel.Photos.FileName
-                    _instagramDate.SavePost(new Post
+                    var newTags = postViewModel.CommaSeparatedTags.Split(",");
+                    List<PostTag> listTags = new List<PostTag>();
+                    foreach(var s in newTags)
+                    {
+                        if (_context.Tags.Where(x => x.Name == s).Any())
+                        {
+                            listTags.Add(new PostTag { Tag = _context.Tags.Where(x => x.Name == s).First()});
+                        }
+                        else
+                        {
+                            listTags.Add(new PostTag { Tag = new Tag { Name = s } });
+                        }
+                    }
+                    // Select(x =>new PostTag{x.Tag = _context.Tags.Where} )
+                    _context.AddPost(new Post
                     {
                         Id = Guid.NewGuid(),
                         Title = postViewModel.Title,
                         PhotosPath = postViewModel.Photos.Select(p => folderName + "/" + p.FileName),
-                        PostTag = postViewModel.CommaSeparatedTags
-                        .Split(",")
-                        .Select(x => new PostTag { Tag =new Tag { Name = x } })
-                        .ToList()
+                        PostTags = listTags
+                        //postViewModel.CommaSeparatedTags
+                        //.Split(",")
+                        //.Select(x => new PostTag { Tag =new Tag { Name = x } })
+                        //.ToList()
 
                         //PostTags.Tags = postViewModel.CommaSeparatedTags
                         //.Split(",")

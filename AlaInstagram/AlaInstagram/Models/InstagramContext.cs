@@ -33,15 +33,27 @@ namespace AlaInstagram.Models
             modelBuilder.Entity<PostTag>()
                         .HasKey(pt => new { pt.Id });
 
-            //modelBuilder.Entity<PostTag>()
-            //            .HasOne(pt => pt.Tag)
-            //            .WithMany(t => t.PostTag)
-            //            .HasForeignKey(pt => pt.TagId);
+            modelBuilder.Entity<PostTag>()
+                        .HasOne(pt => pt.Tag)
+                        .WithMany(t => t.PostTags)
+                        .HasForeignKey(pt => pt.TagId);
 
-            //modelBuilder.Entity<PostTag>()
-            //            .HasOne(pt => pt.Post)
-            //            .WithMany(p => p.PostTag)
-            //            .HasForeignKey(pt => pt.PostId);
+            modelBuilder.Entity<PostTag>()
+                        .HasOne(pt => pt.Post)
+                        .WithMany(p => p.PostTags)
+                        .HasForeignKey(pt => pt.PostId);
+        }
+
+        public void AddPost(Post p)
+        {
+            Posts.Add(p);
+            SaveChanges();
+        }
+
+        public void AddTag(Tag t)
+        {
+            Tags.Add(t);
+            SaveChanges();
         }
     }
 }

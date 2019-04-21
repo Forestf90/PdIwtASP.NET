@@ -17,11 +17,25 @@
     <Compile Remove="Migrations\20190415164054_InitialCreate.Designer.cs" />
     <Compile Remove="Migrations\20190415191821_InitialCreate.cs" />
     <Compile Remove="Migrations\20190415191821_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190415193151_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190415193151_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190415194107_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190415194107_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190415200018_IniialCreate.cs" />
+    <Compile Remove="Migrations\20190415200018_IniialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190415200122_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190415200122_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190415211455_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190415211455_InitialCreate.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 

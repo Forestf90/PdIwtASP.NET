@@ -9,29 +9,29 @@ namespace AlaInstagram.DAL
 {
     public class EntityInstagramData : IInstagramData
     {
-        private InstagramContext _context;
+        public InstagramContext context;
 
         public EntityInstagramData()
         {
-            _context = new InstagramContext();
-            _context.Database.EnsureCreated();
+            context = new InstagramContext();
+            context.Database.EnsureCreated();
         }
 
         public IEnumerable<Post> GetPosts()
         {
-            return _context.Posts;
+            return context.Posts;
         }
 
         public IEnumerable<Tag> GetTags()
         {
 
-            return _context.Tags;
+            return context.Tags;
         }
 
         public void SavePost(Post post)
         {
-            _context.Posts.Add(post);
-            _context.SaveChanges();
+            context.Posts.Add(post);
+            context.SaveChanges();
         }
     }
 }

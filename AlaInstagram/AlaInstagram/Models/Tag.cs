@@ -9,10 +9,10 @@ namespace AlaInstagram.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<PostTag> PostTag { get; set; }
+        public virtual ICollection<PostTag> PostTags { get; set; }
         public Tag()
         {
-            PostTag = new HashSet<PostTag>();
+            PostTags = new HashSet<PostTag>();
         }
     }
 

@@ -18,7 +18,7 @@ namespace AlaInstagram.DAL
         public IEnumerable<Tag> GetTags()
         {
             //List<PostTag> x = PublishedPosts.SelectMany(y => y.PostTags).ToList();
-            return PublishedPosts.SelectMany(x => x.PostTag.Select(y => y.Tag)).ToList();
+            return PublishedPosts.SelectMany(x => x.PostTags.Select(y => y.Tag)).ToList();
         }
 
         public void SavePost(Post post)

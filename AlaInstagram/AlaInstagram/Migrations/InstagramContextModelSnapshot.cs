@@ -68,12 +68,12 @@ namespace AlaInstagram.Migrations
             modelBuilder.Entity("AlaInstagram.Models.PostTag", b =>
                 {
                     b.HasOne("AlaInstagram.Models.Post", "Post")
-                        .WithMany("PostTag")
+                        .WithMany("PostTags")
                         .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("AlaInstagram.Models.Tag", "Tag")
-                        .WithMany("PostTag")
+                        .WithMany("PostTags")
                         .HasForeignKey("TagId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
