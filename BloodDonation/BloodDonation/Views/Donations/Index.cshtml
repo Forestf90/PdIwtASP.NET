@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BloodDonation.Models.Donor>
+﻿@model IEnumerable<BloodDonation.ViewModels.DisplayDonationViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -12,41 +12,35 @@
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.FirstName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.LastName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Pesel)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.BloodGroup)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Rh)
-                </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pesel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Pesel)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BloodGroup)
+                <img src="@Html.DisplayFor(modelItem => item.BloodType)" style="max-height:50px ; max-width:50px">
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Rh)
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Data)*@
+                @String.Format("{0:dd/MM/yyyy}", item.Data)
             </td>
         </tr>
 }

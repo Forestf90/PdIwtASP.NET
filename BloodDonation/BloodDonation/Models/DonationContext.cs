@@ -10,14 +10,15 @@ namespace BloodDonation.Models
 {
     public class DonationContext : DbContext
     {
-        DbSet<Donor> Donors { get; set; }
-        DbSet<Donation> Donations { get; set; }
+        public DbSet<Donor> Donors { get; set; }
+        public DbSet<Donation> Donations { get; set; }
 
-        private string connectionString = @"Server=(localdb)\MSSQLLocalDB;Integrated Security=true";
+        //private string connectionString = @"Server=(localdb)\MSSQLLocalDB;Integrated Security=true";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(connectionString);
+            //optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlite("Filename=./blood.db");
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

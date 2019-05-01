@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BloodDonation.Enums;
 using BloodDonation.Models;
+using BloodDonation.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,41 +13,22 @@ namespace BloodDonation.Controllers
 {
     public class DonationsController : Controller
     {
-        static List<Donor> donors = new List<Donor>();
-        static List<Donation> donations = new List<Donation>();
+        private static DonationContext _context = new DonationContext(); 
         // GET: Donations
         public ActionResult Index()
         {
-            using (StreamReader rd = new StreamReader("source2.csv"))
+            var donationViewModel = _context.Donations.Select(n => new DisplayDonationViewModel
             {
-                while (!rd.EndOfStream)
-                {
-                    var line = rd.ReadLine();
-                    var values = line.Split(',');
+                Pesel = n.Donor.Pesel,
 
-                    Donor temp =new Donor
-                    {
-                        FirstName = values[0],
-                        LastName = values[1],
-                        Pesel = values[2],
-                        BloodGroup = (BloodGroup)Convert.ToInt32(values[3]),
-                        Rh = (BloodRhFactor)Convert.ToInt32(values[4]),
-                        
+                BloodType = "/images/blood_groups/" + n.Donor.BloodGroup.ToString()
+                                         + n.Donor.Rh.ToString() + ".png",
+                Amount = n.Amount,
+                Data= n.Date
+            });
+            donationViewModel = donationViewModel.Take(10);
 
-
-                    };
-                    donors.Add(temp);
-                    donations.Add(new Donation
-                    {
-                        Donor=temp,
-                        Amount = Convert.ToInt32(values[5]),
-                        //Date=Convert.ToDateTime(values[6]),
-                        Date=DateTime.ParseExact(values[6] ,"M/d/yyyy",null)
-                    });
-                }
-            }
-
-                return View(donors);
+            return View(donationViewModel);
         }
 
        

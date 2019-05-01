@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BloodDonation.ViewModels
 {
-    public class DonorViewModel
+    public class DisplayDonorViewModel
     {
         public string Pesel { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Gender Gender { get; set; }
-        public string BloodPath { get; set; }
-        public string BadgePath { get; set; }
+        public string BloodType { get; set; }
+        public string Badge { get; set; }
         public int DonationGiven { get; set; }
 
     }

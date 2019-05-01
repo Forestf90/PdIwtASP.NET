@@ -9,8 +9,7 @@ namespace BloodDonation.ViewModels
     public class DisplayDonationViewModel
     {
         public string Pesel { get; set; }
-        public BloodGroup BloodGroup { get; set; }
-        public BloodRhFactor Rh { get; set; }
+        public string BloodType { get; set; }
         public int Amount { get; set; }
         public DateTime Data { get; set; }
     }
