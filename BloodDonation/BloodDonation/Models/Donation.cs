@@ -7,7 +7,8 @@ namespace BloodDonation.Models
 {
     public class Donation
     {
-        public Client Client { get; set; }
+        public int Id { get; set; }
+        public Donor Donor { get; set; }
         public int Amount { get; set; }
         public DateTime Date { get; set; }
     }

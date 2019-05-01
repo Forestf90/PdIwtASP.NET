@@ -1,0 +1,11 @@
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\bin\Debug\netcoreapp2.0\BloodDonation.deps.json
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\bin\Debug\netcoreapp2.0\BloodDonation.runtimeconfig.json
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\bin\Debug\netcoreapp2.0\BloodDonation.runtimeconfig.dev.json
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\bin\Debug\netcoreapp2.0\BloodDonation.dll
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.0\BloodDonation.csprojAssemblyReference.cache
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.0\BloodDonation.csproj.CoreCompileInputs.cache
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.0\BloodDonation.AssemblyInfoInputs.cache
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.0\BloodDonation.AssemblyInfo.cs
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\bin\Debug\netcoreapp2.0\BloodDonation.pdb
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.0\BloodDonation.dll
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.0\BloodDonation.pdb

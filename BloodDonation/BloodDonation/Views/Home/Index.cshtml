@@ -1,106 +1,120 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "O nas";
 }
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+<style>
+    .masthead {
+        height: 100vh;
+        min-height: 500px;
+        background-image: url('../images/1030.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-light">Oddajac krew </h1>
+                <p class="lead">Ratujesz życie</p>
             </div>
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+</header>
+<h3>Honorowe oddawanie krwi</h3>
+<div class="row">
+    <p>
+        "Oddając krew - darujesz życie" - to hasło towarzyszy działaniom Polskiego Czerwonego Krzyża od 55 lat - od czasu, gdy PCK zajął się organizacją i propagowaniem honorowego krwiodawstwa oraz uświadamianiem znaczenia krwi w ratowaniu życia i zdrowia ludzkiego.
+        Co prawda, za sprawy związane z przetwarzaniem krwi odpowiada służba krwi podległa Krajowemu Centrum Krwiodawstwa i Krwiolecznictwa w Warszawie, jednak planowe i rytmiczne zaopatrzenie regionalnych centrów krwiodawstwa i krwiolecznictwa w życiodajną krew możliwe jest przede wszystkim dzięki honorowym dawcom.
+    </p>
+    <p>
+        Ruch Honorowych Dawców Krwi jest integralną częścią struktury PCK i zrzesza członków oraz wolontariuszy, którzy poza systematycznym i planowym oddawaniem krwi, promują oraz upowszechniają ideały Ruchu zjednując mu tym samym nowych sympatyków.
+        Strukturę organizacyjną Ruchu tworzą kluby i rady HDK. Kluby, jako podstawowe jednostki organizacyjne PCK, zrzeszają dawców w środowiskach lokalnych: miejscach zamieszkania, pracy lub nauki. Podejmowane przez nie inicjatywy to m.in.: doraźne akcje poboru np. w odzewie na apel służby zdrowia, szkolenia, pogadanki, konkursy, wspólne wyjazdy lub imprezy sportowe. Rady HDK działają przy zarządach PCK wszystkich szczebli, a ich działalność dotyczy przede wszystkim koordynacji i inspiracji prac klubów oraz współpracy ze służbą krwi. Nad całokształtem prac Ruchu oraz jego ogólnopolską strategią czuwa, powołana przy Zarządzie Głównym PCK, Krajowa Rada HDK.
+    </p>
+    <p>
+        Drodzy Krwiodawcy, jesteśmy Wam wdzięczni za Wasze poświęcenie oraz wkład w istnienie Ruchu HDK. Krwiodawstwo to dla Was satysfakcja, a dla potrzebujących Waszej krwi - szansa i bezcenny dar życia. Dziękujemy
+    
+    </p>
+</div>
+<h3>Kto moze oddać krew ?</h3>
+<div class="row">
+    <ul>
+        <li>masz 18-65 lat i posiadasz Dowód Osobisty (lub inny dokument ze zdjęciem),</li>
+        <li>ważysz: powyżej 50 kg,</li>
+        <li>nie chorowałeś na żółtaczkę,</li>
+        <li>czujesz się zdrowy,</li>
+        <li>nie chorujesz na choroby zakaźne</li>
+        <li>jeśli w ciągu ostatnich 6 miesięcy nie miałeś wykonanego zabiegu operacyjnego, tatuażu, przekłucia uszu lub innych części ciała.</li>
+    </ul>
 </div>
 
+<h3>Honorowi krwiodawcy</h3>
 <div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+    <p>
+        Odznakę honorową nadaje Zarząd Okręgowy Polskiego Czerwonego Krzyża na pisemny wniosek:
+    </p>
+    <ul>
+        <li>jednostek organizacyjnych PCK</li>
+        <li>stowarzyszeń i klubów zrzeszających honorowych dawców krwi</li>
+        <li>jednostek organizacyjnych publicznej służby krwi.</li>
+    </ul>
+    <p>
+        Odznakę wraz z legitymacją „Zasłużonego Honorowego Dawcy Krwi” nadaje Polski Czerwony Krzyż, na podstawie danych przekazanych przez jednostkę organizacyjną publicznej służby krwi, w której dawca krwi oddał krew lub jej składniki o objętości uprawniającej do nadania tej odznaki. Wzór odznaki regulowało rozporządzenie Ministra Zdrowia z dnia 21 sierpnia 2006 r. Obecnie reguluje je rozporządzenie z 11 września 2017 r., zmienione 4 grudnia 2017 r. Szczegółowe zasady i tryb przyznawania reguluje Ustawa z dnia 20 maja 2016 r.
+    </p>
+    <p>
+        Odznaka honorowa „Zasłużony Honorowy Dawca Krwi” przysługuje honorowemu dawcy po oddaniu krwi w ilościach:
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="~/images/odznaki/Zasluzony_Honorowy_Dawca_Krwi_III.png" style="max-height:100% ; max-width:100%">
+            </div>
+            <div class="col-md-8">
+                <h4>Odznaka III stopnia</h4>
+                <ul>
+                    <li>kobiecie, która oddała w dowolnym okresie co najmniej 5 litrów krwi lub odpowiadającą tej objętości ilość jej składników,</li>
+                    <li>mężczyźnie, który oddał w dowolnym okresie co najmniej 6 litrów krwi lub odpowiadającą tej objętości ilość jej składników</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="~/images/odznaki/Zasluzony_Honorowy_Dawca_Krwi_II.png" style="max-height:100% ; max-width:100%">
+            </div>
+            <div class="col-md-8">
+                <h4>Odznaka II stopnia</h4>
+                <ul>
+                    <li>kobiecie, która oddała w dowolnym okresie co najmniej 10 litrów krwi lub odpowiadającą tej objętości ilość jej składników,</li>
+                    <li>mężczyźnie, który oddał w dowolnym okresie co najmniej 12 litrów krwi lub odpowiadającą tej objętości ilość jej składników</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="~/images/odznaki/Zasluzony_Honorowy_Dawca_Krwi_I.png" style="max-height:100% ; max-width:100%">
+            </div>
+            <div class="col-md-8">
+                <h4>Odznaka I stopnia</h4>
+                <ul>
+                    <li>kobiecie, która oddała w dowolnym okresie co najmniej 15 litrów krwi lub odpowiadającą tej objętości ilość jej składników,</li>
+                    <li>mężczyźnie, który oddał w dowolnym okresie co najmniej 18 litrów krwi lub odpowiadającą tej objętości ilość jej składników</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
+</div>
+<h3>Obecny stan krwi</h3>
+<div class="container">
+<div class=" row">
+    <div class="col-lg-3"><img src="~/images/blood_groups/0Positive.png" class="img-responsive"><p style="text-align:center">20ml</p></div>
+    <div class="col-lg-3"><img src="~/images/blood_groups/APositive.png" class="img-responsive"></div>
+    <div class="col-lg-3"><img src="~/images/blood_groups/BPositive.png" class="img-responsive"></div>
+    <div class="col-lg-3"><img src="~/images/blood_groups/ABPositive.png" class="img-responsive"></div>
+</div>
+<div class=" row">
+    <div class="col-sm-3"><img src="~/images/blood_groups/0Negative.png" class="img-responsive"></div>
+    <div class="col-sm-3"><img src="~/images/blood_groups/ANegative.png" class="img-responsive"></div>
+    <div class="col-sm-3"><img src="~/images/blood_groups/BNegative.png" class="img-responsive"></div>
+    <div class="col-sm-3"><img src="~/images/blood_groups/ABNegative.png" class="img-responsive"></div>
+</div>
 </div>

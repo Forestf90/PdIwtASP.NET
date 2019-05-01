@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using BloodDonation.Enums;
 using BloodDonation.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +12,7 @@ namespace BloodDonation.Controllers
 {
     public class DonationsController : Controller
     {
-        static List<Client> clients = new List<Client>();
+        static List<Donor> donors = new List<Donor>();
         static List<Donation> donations = new List<Donation>();
         // GET: Donations
         public ActionResult Index()
@@ -23,7 +24,7 @@ namespace BloodDonation.Controllers
                     var line = rd.ReadLine();
                     var values = line.Split(',');
 
-                    Client temp =new Client
+                    Donor temp =new Donor
                     {
                         FirstName = values[0],
                         LastName = values[1],
@@ -34,24 +35,21 @@ namespace BloodDonation.Controllers
 
 
                     };
-                    clients.Add(temp);
+                    donors.Add(temp);
                     donations.Add(new Donation
                     {
-                        Client=temp
-                        //Amount
+                        Donor=temp,
+                        Amount = Convert.ToInt32(values[5]),
+                        //Date=Convert.ToDateTime(values[6]),
+                        Date=DateTime.ParseExact(values[6] ,"M/d/yyyy",null)
                     });
                 }
             }
 
-                return View(clients);
+                return View(donors);
         }
 
-        // GET: Donations/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
+       
         // GET: Donations/Create
         public ActionResult Create()
         {
@@ -75,50 +73,6 @@ namespace BloodDonation.Controllers
             }
         }
 
-        // GET: Donations/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Donations/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Donations/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Donations/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+       
     }
 }
