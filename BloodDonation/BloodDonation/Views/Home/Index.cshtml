@@ -1,11 +1,13 @@
-﻿@{
+﻿@model Dictionary<float ,string>
+
+@{
     ViewData["Title"] = "O nas";
 }
 <style>
     .masthead {
         height: 100vh;
         min-height: 500px;
-        background-image: url('../images/1030.jpg');
+        background-image: url('../images/blood_banner.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -33,7 +35,7 @@
     </p>
     <p>
         Drodzy Krwiodawcy, jesteśmy Wam wdzięczni za Wasze poświęcenie oraz wkład w istnienie Ruchu HDK. Krwiodawstwo to dla Was satysfakcja, a dla potrzebujących Waszej krwi - szansa i bezcenny dar życia. Dziękujemy
-    
+
     </p>
 </div>
 <h3>Kto moze oddać krew ?</h3>
@@ -103,18 +105,31 @@
         </div>
     </div>
 </div>
-<h3>Obecny stan krwi</h3>
-<div class="container">
+<h3>Ilość oddanej krwi</h3>
+@*<div class="container">
+    <div class=" row">
+        <div class="col-lg-3"><img src=@Model.ElementAt(0).Value class="img-responsive"><p style="text-align:center">@Model.ElementAt(0).Key ml</p></div>
+        <div class="col-lg-3"><img src="~/images/blood_groups/APositive.png" class="img-responsive"><p style="text-align:center">@Model.ElementAt(1).Key ml</p></div>
+        <div class="col-lg-3"><img src="~/images/blood_groups/BPositive.png" class="img-responsive"><p style="text-align:center">@Model.ElementAt(2).Key ml</p></div>
+        <div class="col-lg-3"><img src="~/images/blood_groups/ABPositive.png" class="img-responsive"><p style="text-align:center">@Model.ElementAt(3).Key ml</p></div>
+    </div>
+    <div class=" row">
+        <div class="col-sm-3"><img src="~/images/blood_groups/ZeroNegative.png" class="img-responsive"></div>
+        <div class="col-sm-3"><img src="~/images/blood_groups/ANegative.png" class="img-responsive"></div>
+        <div class="col-sm-3"><img src="~/images/blood_groups/BNegative.png" class="img-responsive"></div>
+        <div class="col-sm-3"><img src="~/images/blood_groups/ABNegative.png" class="img-responsive"></div>
+    </div>*@
 <div class=" row">
-    <div class="col-lg-3"><img src="~/images/blood_groups/ZeroPositive.png" class="img-responsive"><p style="text-align:center">20ml</p></div>
-    <div class="col-lg-3"><img src="~/images/blood_groups/APositive.png" class="img-responsive"></div>
-    <div class="col-lg-3"><img src="~/images/blood_groups/BPositive.png" class="img-responsive"></div>
-    <div class="col-lg-3"><img src="~/images/blood_groups/ABPositive.png" class="img-responsive"></div>
-</div>
-<div class=" row">
-    <div class="col-sm-3"><img src="~/images/blood_groups/ZeroNegative.png" class="img-responsive"></div>
-    <div class="col-sm-3"><img src="~/images/blood_groups/ANegative.png" class="img-responsive"></div>
-    <div class="col-sm-3"><img src="~/images/blood_groups/BNegative.png" class="img-responsive"></div>
-    <div class="col-sm-3"><img src="~/images/blood_groups/ABNegative.png" class="img-responsive"></div>
-</div>
+    @{ 
+        int i = 0;
+     }
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3"><img src=@item.Value class="img-responsive"><p style="text-align:center">@item.Key l</p></div>
+        if (i == 3)
+        {
+            @Html.Raw("</div><div class='row'>");
+        }
+        i++;
+    }
 </div>

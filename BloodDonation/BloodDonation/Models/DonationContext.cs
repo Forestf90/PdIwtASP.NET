@@ -45,10 +45,7 @@ namespace BloodDonation.Models
                             Pesel = values[2],
                             Gender =(Gender)Convert.ToInt32(values[3]),
                             BloodGroup = (BloodGroup)Convert.ToInt32(values[4]),
-                            Rh = (BloodRhFactor)Convert.ToInt32(values[5]),
-                            Honor = (HonorDonor)Convert.ToInt32(values[6])
-
-
+                            Rh = (BloodRhFactor)Convert.ToInt32(values[5])
 
                         };
                         //AddDonor(temp);

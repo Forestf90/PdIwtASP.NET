@@ -28,24 +28,25 @@
                 <span asp-validation-for="Pesel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
+                <label asp-for="Gender" class="control-label"></label><br>
+                @foreach (var gen in ViewBag.Gender)
+                {
+                    <label><input asp-for="Gender" value="@gen.Value" type="radio" /> @gen.Text</label><br>
+                }
                 <span asp-validation-for="Gender" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="BloodGroup" class="control-label"></label>
-                <input asp-for="BloodGroup" type="radio" value="0" text="0" class="form-control" />
+                <select asp-for="BloodGroup" asp-items="ViewBag.BloodGroup" class="form-control"></select>
                 <span asp-validation-for="BloodGroup" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Rh" class="control-label"></label>
-                <input asp-for="Rh" class="form-control" />
+                <label asp-for="Rh" class="control-label"></label><br>
+                @foreach (var r in ViewBag.BloodRh)
+                {
+                    <label><input asp-for="Rh" value="@r.Value" type="radio" /> @r.Text</label><br>
+                }
                 <span asp-validation-for="Rh" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Honor" class="control-label"></label>
-                <input asp-for="Honor" class="form-control" />
-                <span asp-validation-for="Honor" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
@@ -53,6 +54,18 @@
         </form>
     </div>
 </div>
+@if (ViewData["DonorCreate"] != null)
+{
+    @if ((bool)ViewData["DonorCreate"])
+    {
+        <div class="alert alert-danger" role="alert">Osoba z takim peselem istnieje juz w bazie</div>
+    }
+    else if ((bool)ViewData["DonorCreate"])
+    {
+        <div class="alert alert-success" role="alert">Dawca dodany!</div>
+    }
+}
+
 
 <div>
     <a asp-action="Index">Back to List</a>

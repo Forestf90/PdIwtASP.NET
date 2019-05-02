@@ -31,9 +31,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.DonationGiven)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Badge)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -56,11 +53,13 @@
                 <img src="@Html.DisplayFor(modelItem => item.BloodType)"  style="max-height:50px ; max-width:50px">
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DonationGiven) ml
+                @Html.DisplayFor(modelItem => item.DonationGiven) ml   
+                @if (item.Badge != "")
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Badge)" style="max-height:50px ; max-width:50px">
+                }
             </td>
-            <td>
-                <img src="@Html.DisplayFor(modelItem => item.Badge)"  style="max-height:50px ; max-width:50px">
-            </td>
+
         </tr>
 }
     </tbody>

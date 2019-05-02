@@ -45,8 +45,6 @@ namespace BloodDonation.Migrations
 
                     b.Property<int>("Gender");
 
-                    b.Property<int>("Honor");
-
                     b.Property<string>("LastName");
 
                     b.Property<int>("Rh");
