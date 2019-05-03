@@ -7,5 +7,6 @@ namespace BloodDonation.ViewModels
 {
     public class CreateDonationViewModel
     {
+        public List<string> Pesel { get; set; }
     }
 }

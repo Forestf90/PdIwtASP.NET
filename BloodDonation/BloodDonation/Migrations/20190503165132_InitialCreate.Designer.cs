@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodDonation.Migrations
 {
     [DbContext(typeof(DonationContext))]
-    [Migration("20190502141645_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20190503165132_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,9 +23,9 @@ namespace BloodDonation.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Amount");
-
                     b.Property<DateTime>("Date");
+
+                    b.Property<int>("DonationType");
 
                     b.Property<string>("DonorPesel");
 
@@ -43,11 +43,15 @@ namespace BloodDonation.Migrations
 
                     b.Property<int>("BloodGroup");
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(20);
 
                     b.Property<int>("Gender");
 
-                    b.Property<string>("LastName");
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(20);
 
                     b.Property<int>("Rh");
 

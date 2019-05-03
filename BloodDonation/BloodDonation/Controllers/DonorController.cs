@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BloodDonation.Enums;
 using BloodDonation.Models;
+using BloodDonation.PagedLists;
 using BloodDonation.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,27 +15,44 @@ namespace BloodDonation.Controllers
     public class DonorController : Controller
     {
         private DonationContext _context = new DonationContext();
-        // GET: Donor
-        public ActionResult Index()
+
+        public DonorPagedList GetPagedList(int page = 1, int itemsOnPage = 10 )
         {
-            var donorViewModel = _context.Donors.Select(n =>new DisplayDonorViewModel
+            var donorViewModel = _context.Donors.Select(n => new DisplayDonorViewModel
             {
-                Pesel= n.Pesel,
-                FirstName=n.FirstName,
-                LastName=n.LastName,
-                Gender =n.Gender,
-                BloodType = "/images/blood_groups/"+n.BloodGroup.ToString()
-                                                    +n.Rh.ToString()+".png",
-                //Badge= "/images/odznaki/"+n.Honor.ToString()+".png",
+                Pesel = n.Pesel,
+                FirstName = n.FirstName,
+                LastName = n.LastName,
+                Gender = n.Gender,
+                BloodType = "/images/blood_groups/" + n.BloodGroup.ToString()
+                                                    + n.Rh.ToString() + ".png",
                 Badge = n.GetHonor(),
-                DonationGiven = n.Donations.Select(k=> k.Amount).Sum()
+                DonationGiven = n.Donations.Select(k => k.GetAmount()).Sum()
             });
-            donorViewModel =donorViewModel.Take(10);
-            return View(donorViewModel);
+
+
+            var pagedList = new DonorPagedList();
+            pagedList.CurrentPage = page;
+            pagedList.TotalPages = donorViewModel.Count() / itemsOnPage;
+            if (donorViewModel.Count() % itemsOnPage > 0)
+                pagedList.TotalPages++;
+            pagedList.ItemsOnPage = itemsOnPage;
+
+            pagedList.GetDonors = new List<DisplayDonorViewModel>();
+            pagedList.GetDonors = donorViewModel.Skip((page - 1) * itemsOnPage)
+                .Take(itemsOnPage).ToList();
+
+            return pagedList;
+        }
+        // GET: Donor
+        public ActionResult Index(int page = 1, int itemsOnPage = 10)
+        {
+
+            return View(GetPagedList(page , itemsOnPage));
         }
 
         // GET: Donor/Create
-        public ActionResult Create()
+        public ActionResult Create(int page = 1, int itemsOnPage = 5, bool? add = null)
         {
             var selectListGender = new List<SelectListItem>
             {
@@ -59,9 +77,13 @@ namespace BloodDonation.Controllers
             };
             ViewBag.BloodRh = selectListRh;
 
-            ViewData["DonorCreate"] = true;
+            if (add!=null){
+                if ((bool)add) ViewData["DonorCreate"] = true;
+                else ViewData["DonorCreate"] = false;
+            }
+            
 
-            return View();
+            return View(GetPagedList(page, itemsOnPage));
         }
 
         // POST: Donor/Create
@@ -76,15 +98,13 @@ namespace BloodDonation.Controllers
                     var exist = _context.Donors.Where(p => p.Pesel == donor.Pesel).Any();
                     if (exist)
                     {
-                        ViewData["DonorCreate"] = false;
-                        return RedirectToAction(nameof(Create));
+                        return RedirectToAction(nameof(Create) , new {add=false });
                     }
                     else
                     {
                         _context.AddDonor(donor);
 
-                        ViewData["DonorCreate"] = true;
-                        return RedirectToAction(nameof(Create));
+                        return RedirectToAction(nameof(Create) , new { add = true });
                     }
 
                 }

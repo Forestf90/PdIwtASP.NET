@@ -32,3 +32,5 @@ C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcore
 C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.1\Razor\Views\Donor\Create.g.cshtml.cs
 C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.1\Razor\Views\Donations\Index.g.cshtml.cs
 C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.1\Razor\Views\Donations\Create.g.cshtml.cs
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Donor\Default.g.cshtml.cs
+C:\Users\Forestf\Desktop\ASPdotNET\BloodDonation\BloodDonation\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Donation\Default.g.cshtml.cs

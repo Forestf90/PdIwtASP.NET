@@ -22,36 +22,36 @@ namespace BloodDonation.Controllers
             {
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.Zero &&
                          g.Donor.Rh==Enums.BloodRhFactor.Positive)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/ZeroPositive.png" },
+                        .Select(a => a.GetAmount()).Sum()/100,"/images/blood_groups/ZeroPositive.png" },
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.A &&
                          g.Donor.Rh==Enums.BloodRhFactor.Positive)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/APositive.png" },
+                        .Select(a =>  a.GetAmount()).Sum()/100,"/images/blood_groups/APositive.png" },
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.B &&
                          g.Donor.Rh==Enums.BloodRhFactor.Positive)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/BPositive.png" },
+                        .Select(a =>  a.GetAmount()).Sum()/100,"/images/blood_groups/BPositive.png" },
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.AB &&
                          g.Donor.Rh==Enums.BloodRhFactor.Positive)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/ABPositive.png" },
+                        .Select(a =>  a.GetAmount()).Sum()/100,"/images/blood_groups/ABPositive.png" },
 
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.Zero &&
                          g.Donor.Rh==Enums.BloodRhFactor.Negative)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/ZeroNegative.png" },
+                        .Select(a => a.GetAmount()).Sum()/100,"/images/blood_groups/ZeroNegative.png" },
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.A &&
                          g.Donor.Rh==Enums.BloodRhFactor.Negative)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/ANegative.png" },
+                        .Select(a =>  a.GetAmount()).Sum()/100,"/images/blood_groups/ANegative.png" },
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.B &&
                          g.Donor.Rh==Enums.BloodRhFactor.Negative)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/BNegative.png" },
+                        .Select(a =>  a.GetAmount()).Sum()/100,"/images/blood_groups/BNegative.png" },
 
                 { (float)context.Donations.Where(g=>g.Donor.BloodGroup==Enums.BloodGroup.AB &&
                          g.Donor.Rh==Enums.BloodRhFactor.Negative)
-                        .Select(a => a.Amount).Sum()/100,"/images/blood_groups/ABNegative.png" }
+                        .Select(a =>  a.GetAmount()).Sum()/100,"/images/blood_groups/ABNegative.png" }
             };
 
 

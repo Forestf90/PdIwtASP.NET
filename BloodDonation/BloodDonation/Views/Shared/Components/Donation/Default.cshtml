@@ -1,0 +1,40 @@
+﻿@model BloodDonation.PagedLists.DonationPagedList
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DisplayDonation.Pesel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisplayDonation.BloodType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisplayDonation.DonationType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisplayDonation.Date)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.GetDonations)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pesel)
+                </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem => item.BloodType)" style="max-height:50px ; max-width:50px">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonationType)
+                </td>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.Data)*@
+                    @String.Format("{0:dd/MM/yyyy}", item.Date)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

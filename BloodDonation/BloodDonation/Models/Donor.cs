@@ -34,7 +34,7 @@ namespace BloodDonation.Models
 
         public string GetHonor()
         {
-            int amount = Donations.Select(a => a.Amount).Sum();
+            int amount = Donations.Select(a => a.GetAmount()).Sum();
 
             if (Gender == Gender.Female)
             {

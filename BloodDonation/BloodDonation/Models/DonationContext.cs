@@ -31,7 +31,7 @@ namespace BloodDonation.Models
             Database.EnsureCreated();
             if (!Donors.Any() && !Donations.Any())
             {
-                using (StreamReader rd = new StreamReader("source4.csv"))
+                using (StreamReader rd = new StreamReader("source6.csv"))
                 {
                     while (!rd.EndOfStream)
                     {
@@ -52,8 +52,8 @@ namespace BloodDonation.Models
                         AddDonation(new Donation
                         {
                             Donor = temp,
-                            Amount = Convert.ToInt32(values[7]),
-                            Date = DateTime.ParseExact(values[8], "MM/dd/yyyy", null)
+                            DonationType = (DonationType)Convert.ToInt32(values[6]),
+                            Date = DateTime.ParseExact(values[7], "M/d/yyyy", null)
                         });
                     }
                 }

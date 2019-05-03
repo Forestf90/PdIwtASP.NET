@@ -21,9 +21,9 @@ namespace BloodDonation.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Amount");
-
                     b.Property<DateTime>("Date");
+
+                    b.Property<int>("DonationType");
 
                     b.Property<string>("DonorPesel");
 
@@ -41,11 +41,15 @@ namespace BloodDonation.Migrations
 
                     b.Property<int>("BloodGroup");
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(20);
 
                     b.Property<int>("Gender");
 
-                    b.Property<string>("LastName");
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(20);
 
                     b.Property<int>("Rh");
 

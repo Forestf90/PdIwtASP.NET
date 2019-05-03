@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BloodDonation.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,8 +12,8 @@ namespace BloodDonation.Migrations
                 columns: table => new
                 {
                     Pesel = table.Column<string>(nullable: false),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(maxLength: 20, nullable: false),
+                    LastName = table.Column<string>(maxLength: 20, nullable: false),
                     Gender = table.Column<int>(nullable: false),
                     BloodGroup = table.Column<int>(nullable: false),
                     Rh = table.Column<int>(nullable: false)
@@ -30,7 +30,7 @@ namespace BloodDonation.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     DonorPesel = table.Column<string>(nullable: true),
-                    Amount = table.Column<int>(nullable: false),
+                    DonationType = table.Column<int>(nullable: false),
                     Date = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>

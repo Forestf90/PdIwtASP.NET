@@ -10,7 +10,7 @@ namespace BloodDonation.ViewModels
     {
         public string Pesel { get; set; }
         public string BloodType { get; set; }
-        public int Amount { get; set; }
-        public DateTime Data { get; set; }
+        public DonationType DonationType { get; set; }
+        public DateTime Date { get; set; }
     }
 }
