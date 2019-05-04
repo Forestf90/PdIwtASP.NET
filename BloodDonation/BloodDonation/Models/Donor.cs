@@ -34,9 +34,10 @@ namespace BloodDonation.Models
 
         public string GetHonor()
         {
-            int amount = Donations.Select(a => a.GetAmount()).Sum();
+            DonationContext con = new DonationContext();
+            int amount = con.Donations.Where(x=>x.Donor.Pesel==this.Pesel).Select(a => a.GetAmount()).Sum();
 
-            if (Gender == Gender.Female)
+            if (this.Gender == Gender.Female)
             {
                 if (amount >= 15000) return "/images/odznaki/I.png";
                 else if(amount >=10000) return "/images/odznaki/II.png";
@@ -52,5 +53,22 @@ namespace BloodDonation.Models
             }
 
         }
+
+        public DateTime NextDonation(DonationType nextType)
+        {
+            DateTime next = new DateTime();
+            DonationContext con = new DonationContext();
+
+            var lastTime = con.Donations.Where(p => p.Donor.Pesel == this.Pesel).Select(l => l.Date).Max();
+            var lastType = con.Donations.Where(p => p.Donor.Pesel == this.Pesel && p.Date == lastTime)
+                                .Select(x=> x.DonationType).First();
+
+            next =lastTime.AddDays(64);
+            return next;
+
+        }
     }
 }
+
+
+    

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -51,7 +52,7 @@ namespace BloodDonation.Controllers
 
        
         // GET: Donations/Create
-        public ActionResult Create(int page = 1, int itemsOnPage = 5)
+        public ActionResult Create(int page = 1, int itemsOnPage = 5 , string add=null)
         {
             var selectListDonation = new List<SelectListItem>
             {
@@ -65,6 +66,11 @@ namespace BloodDonation.Controllers
 
             var donors = _context.Donors.Select(p => p.Pesel);
             ViewBag.Pesels = donors;
+            if (!String.IsNullOrEmpty(add))
+            {
+                ViewData["DonationCreate"] = add;
+
+            }
 
             return View(GetPagedList(page, itemsOnPage));
         }
@@ -72,13 +78,29 @@ namespace BloodDonation.Controllers
         // POST: Donations/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Donation donation)
         {
             try
             {
-                // TODO: Add insert logic here
+                
+                var donor = _context.Donors.Where(p => p.Pesel == donation.Donor.Pesel).First();
+                donation.Donor = donor;
+                if(donor.NextDonation(donation.DonationType) <= DateTime.Now)
+                {
+                    donation.Date = DateTime.Now.Date;
+                    _context.AddDonation(donation);
+                    string when = "ok";
+                    return RedirectToAction(nameof(Create), new { add=when});
+                }
+                else
+                {
+                    var temp = donor.NextDonation(donation.DonationType);
+                    string when = "Następnej dotacji można dokonać " + temp.Date.ToString();
+                    return RedirectToAction(nameof(Create), new { add = when });
+                }
+                //_context.AddDonation(donation);
 
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Create));
             }
             catch
             {

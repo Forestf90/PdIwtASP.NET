@@ -13,13 +13,14 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Donation.Donor.Pesel" class="control-label"></label>
+                <label asp-for="Donation.Donor.Pesel" class="control-label"></label><br>
                 <select asp-for="Donation.Donor.Pesel" class="selectpicker" data-live-search="true">
                     @foreach (var p in ViewBag.Pesels)
                     {
                         <option>@p</option>
                     }
-                </select>
+                </select><br>
+                <span>Jeśli to pierwsza dotacja <a asp-action="Create" asp-controller="Donor">dodaj dawce</a></span>
                 <span asp-validation-for="Donation.Donor.Pesel" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -27,18 +28,28 @@
                 <select asp-for="Donation.DonationType" asp-items="ViewBag.DonationType" class="form-control"></select>
                 <span asp-validation-for="Donation.DonationType" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Donation.Date" class="control-label"></label>
-                <input asp-for="Donation.Date" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" />
-                <span asp-validation-for="Donation.Date" class="text-danger"></span>
-            </div>
+            @*<div class="form-group">
+                    <label asp-for="Donation.Date" class="control-label"></label>
+                    <input asp-for="Donation.Date" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" />
+                    <span asp-validation-for="Donation.Date" class="text-danger"></span>
+                </div>*@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
-
+@if (!String.IsNullOrEmpty((string)ViewData["DonationCreate"]))
+{
+    @if ((string)ViewData["DonationCreate"] == "ok")
+    {
+        <div class="alert alert-success" role="alert">Dotacja dodana!</div>
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["DonationCreate"]</div>
+    }
+}
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
