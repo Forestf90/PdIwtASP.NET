@@ -26,6 +26,7 @@ namespace BloodDonation.Controllers
                 BloodType = "/images/blood_groups/" + n.Donor.BloodGroup.ToString()
                                                     + n.Donor.Rh.ToString() + ".png",
                 Date=n.Date,
+                Amount=n.Amount,
                 DonationType = n.DonationType
             });
 
@@ -56,11 +57,11 @@ namespace BloodDonation.Controllers
         {
             var selectListDonation = new List<SelectListItem>
             {
-                new SelectListItem{Value = DonationType.PureBlood.ToString() , Text="Pełna krew [450ml]"},
-                new SelectListItem{Value = DonationType.Plasma.ToString() , Text="Osocze [650ml]"},
-                new SelectListItem{Value = DonationType.Platelets.ToString() , Text="Płytki krwi [300ml]"},
-                new SelectListItem{Value = DonationType.RedBloodCells.ToString() , Text="Krwinki czerwone [2x300ml]"},
-                new SelectListItem{Value = DonationType.WhiteBloodCells.ToString() , Text="Krwinki białe [200ml]"},
+                new SelectListItem{Value = DonationType.PureBlood.ToString() , Text="Pełna krew"},
+                new SelectListItem{Value = DonationType.Plasma.ToString() , Text="Osocze"},
+                new SelectListItem{Value = DonationType.Platelets.ToString() , Text="Płytki krwi"},
+                new SelectListItem{Value = DonationType.RedBloodCells.ToString() , Text="Krwinki czerwone"},
+                new SelectListItem{Value = DonationType.WhiteBloodCells.ToString() , Text="Krwinki białe"},
             };
             ViewBag.DonationType = selectListDonation;
 
@@ -78,29 +79,41 @@ namespace BloodDonation.Controllers
         // POST: Donations/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Donation donation)
+        public ActionResult Create(CreateDonationViewModel DonationCreate)
         {
             try
             {
-                
-                var donor = _context.Donors.Where(p => p.Pesel == donation.Donor.Pesel).First();
-                donation.Donor = donor;
-                if(donor.NextDonation(donation.DonationType) <= DateTime.Now)
+
+
+                if (ModelState.IsValid)
                 {
-                    donation.Date = DateTime.Now.Date;
-                    _context.AddDonation(donation);
-                    string when = "ok";
-                    return RedirectToAction(nameof(Create), new { add=when});
-                }
-                else
-                {
-                    var temp = donor.NextDonation(donation.DonationType);
-                    string when = "Następnej dotacji można dokonać " + temp.Date.ToString();
-                    return RedirectToAction(nameof(Create), new { add = when });
+                    var donor = _context.Donors.Where(p => p.Pesel == DonationCreate.Pesel).First();
+                    var donation = new Donation
+                    {
+                        Donor = donor,
+                        Amount = DonationCreate.Amount,
+                        DonationType = DonationCreate.DonationType,
+                        Date = DateTime.Now.Date
+                    };
+
+
+                    if (donor.NextDonation(donation.DonationType) <= DateTime.Now)
+                    {
+                        _context.AddDonation(donation);
+                        string when = "ok";
+                        return RedirectToAction(nameof(Create), new { add = when });
+                    }
+                    else
+                    {
+                        var temp = donor.NextDonation(donation.DonationType);
+                        string when = "Następnej dotacji można dokonać " + temp.Date.ToString();
+                        return RedirectToAction(nameof(Create), new { add = when });
+                    }
                 }
                 //_context.AddDonation(donation);
-
-                //return RedirectToAction(nameof(Create));
+                var errors = ModelState.Values.SelectMany(v => v.Errors).ToArray();
+                string whenn = errors[0].ErrorMessage;// "Coś poszlo nie tak";
+                return RedirectToAction(nameof(Create), new { add = whenn });
             }
             catch
             {

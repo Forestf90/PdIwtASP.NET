@@ -7,34 +7,44 @@
                 @Html.DisplayNameFor(model => model.DisplayDonation.Pesel)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DisplayDonation.BloodType)
+                @*@Html.DisplayNameFor(model => model.DisplayDonation.BloodType)*@
+                Grupa krwi
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DisplayDonation.DonationType)
+                @*@Html.DisplayNameFor(model => model.DisplayDonation.DonationType)*@
+                Typ donacji
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DisplayDonation.Date)
+                @*@Html.DisplayNameFor(model => model.DisplayDonation.Amount)*@
+                Ilość
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.DisplayDonation.Date)*@
+                Data
             </th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.GetDonations)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Pesel)
-                </td>
-                <td>
-                    <img src="@Html.DisplayFor(modelItem => item.BloodType)" style="max-height:50px ; max-width:50px">
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DonationType)
-                </td>
-                <td>
-                    @*@Html.DisplayFor(modelItem => item.Data)*@
-                    @String.Format("{0:dd/MM/yyyy}", item.Date)
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pesel)
+            </td>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => item.BloodType)" style="max-height:50px ; max-width:50px">
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem =>item.DonationType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Data)*@
+                @String.Format("{0:dd/MM/yyyy}", item.Date)
+            </td>
+        </tr>
         }
     </tbody>
 </table>

@@ -10,7 +10,7 @@ namespace BloodDonation.PagedLists
     public class DonationPagedList
     {
         public List<DisplayDonationViewModel> GetDonations { get; set; }
-        public Donation Donation { get; set; }
+        public CreateDonationViewModel DonationCreate { get; set; }
         public DisplayDonationViewModel DisplayDonation { get; set; }
         public int CurrentPage { get; set; }
         public int TotalPages { get; set; }

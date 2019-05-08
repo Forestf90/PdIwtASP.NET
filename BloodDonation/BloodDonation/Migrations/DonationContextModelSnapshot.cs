@@ -21,6 +21,8 @@ namespace BloodDonation.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("Amount");
+
                     b.Property<DateTime>("Date");
 
                     b.Property<int>("DonationType");

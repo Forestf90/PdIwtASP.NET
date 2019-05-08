@@ -18,7 +18,7 @@ namespace BloodDonation.Models
         {
             base.OnConfiguring(optionsBuilder);
             //optionsBuilder.UseSqlServer(connectionString);
-            optionsBuilder.UseSqlite("Filename=./blood.db");
+            optionsBuilder.UseSqlite("Filename=DonationsDB.db");
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ namespace BloodDonation.Models
             Database.EnsureCreated();
             if (!Donors.Any() && !Donations.Any())
             {
-                using (StreamReader rd = new StreamReader("source6.csv"))
+                using (StreamReader rd = new StreamReader("source7.csv"))
                 {
                     while (!rd.EndOfStream)
                     {
@@ -52,8 +52,9 @@ namespace BloodDonation.Models
                         AddDonation(new Donation
                         {
                             Donor = temp,
+                            Amount= Convert.ToInt32(values[7]),
                             DonationType = (DonationType)Convert.ToInt32(values[6]),
-                            Date = DateTime.ParseExact(values[7], "M/d/yyyy", null)
+                            Date = DateTime.ParseExact(values[8], "M/d/yyyy", null)
                         });
                     }
                 }

@@ -22,8 +22,11 @@ namespace BloodDonation.Models
         //[Pesel]
         [RegularExpression(@"[0-9]{11}")]
         public string Pesel { get; set; }
+        [Required]
         public Gender Gender { get; set; }
+        [Required]
         public BloodGroup BloodGroup { get; set; }
+        [Required]
         public BloodRhFactor Rh { get; set; }
         public ICollection<Donation> Donations { get; set; }
 

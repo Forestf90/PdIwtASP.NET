@@ -10,10 +10,15 @@ namespace BloodDonation.Enums
 {
     public enum DonationType
     {
-        PureBlood,
+        [Display(Name ="Czysta krew")]
+        PureBlood =0,
+        [Display(Name = "Osocze")]
         Plasma,
+        [Display(Name = "Płytki krwi")]
         Platelets,
+        [Display(Name = "Czerwone Krwinki")]
         RedBloodCells,
+        [Display(Name = "Białe krwinki")]
         WhiteBloodCells
     }
 

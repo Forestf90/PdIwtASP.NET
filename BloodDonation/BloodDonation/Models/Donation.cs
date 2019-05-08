@@ -1,6 +1,8 @@
 ﻿using BloodDonation.Enums;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,6 +14,7 @@ namespace BloodDonation.Models
         public Donor Donor { get; set; }
         public DonationType DonationType { get; set; }
         public DateTime Date { get; set; }
+        public int Amount { get; set; }
 
         public int GetAmount()
         {
@@ -20,24 +23,25 @@ namespace BloodDonation.Models
             switch (this.DonationType)
             {
                 case DonationType.PureBlood:
-                    amount = 450;
+                    amount = Amount;
                     break;
                 case DonationType.Plasma:
-                    amount = 216;
+                    amount = Convert.ToInt32(Amount*0.33f);
                     break;
                 case DonationType.Platelets:
-                    amount = 500;
+                    amount = Convert.ToInt32(Amount * 1.66f);
                     break;
                 case DonationType.RedBloodCells:
-                    amount = 1000;
+                    amount = Convert.ToInt32(Amount * 3.33f);
                     break;
                 case DonationType.WhiteBloodCells:
-                    amount = 2000;
+                    amount = Amount*5;
                     break;
             }
 
             return amount;
         }
     }
+
 
 }

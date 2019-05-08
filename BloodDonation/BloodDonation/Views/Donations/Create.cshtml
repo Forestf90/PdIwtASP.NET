@@ -4,41 +4,45 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
-
-<h4>Donation</h4>
+<h4>Donacja</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Donation.Donor.Pesel" class="control-label"></label><br>
-                <select asp-for="Donation.Donor.Pesel" class="selectpicker" data-live-search="true">
+                <label asp-for="DonationCreate.Pesel" class="control-label"></label><br>
+                <select asp-for="DonationCreate.Pesel" class="selectpicker" data-live-search="true">
                     @foreach (var p in ViewBag.Pesels)
                     {
                         <option>@p</option>
                     }
                 </select><br>
                 <span>Jeśli to pierwsza dotacja <a asp-action="Create" asp-controller="Donor">dodaj dawce</a></span>
-                <span asp-validation-for="Donation.Donor.Pesel" class="text-danger"></span>
+                <span asp-validation-for="DonationCreate.Pesel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Donation.DonationType" class="control-label"></label>
-                <select asp-for="Donation.DonationType" asp-items="ViewBag.DonationType" class="form-control"></select>
-                <span asp-validation-for="Donation.DonationType" class="text-danger"></span>
+                <label asp-for="DonationCreate.DonationType" class="control-label"></label>
+                <select asp-for="DonationCreate.DonationType" asp-items="ViewBag.DonationType" class="form-control"></select>
+                <span asp-validation-for="DonationCreate.DonationType" class="text-danger"></span>
             </div>
+        <div class="form-group">
+            <label asp-for="DonationCreate.Amount" class="control-label"></label>
+            <input asp-for="DonationCreate.Amount"  class="form-control" />
+            <span asp-validation-for="DonationCreate.Amount" class="text-danger"></span>
+        </div>
             @*<div class="form-group">
-                    <label asp-for="Donation.Date" class="control-label"></label>
-                    <input asp-for="Donation.Date" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" />
-                    <span asp-validation-for="Donation.Date" class="text-danger"></span>
-                </div>*@
+            <label asp-for="Donation.Date" class="control-label"></label>
+            <input asp-for="Donation.Date" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" />
+            <span asp-validation-for="Donation.Date" class="text-danger"></span>
+        </div>*@
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Dodaj" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
+
 @if (!String.IsNullOrEmpty((string)ViewData["DonationCreate"]))
 {
     @if ((string)ViewData["DonationCreate"] == "ok")
@@ -51,7 +55,7 @@
     }
 }
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Wróć do listy</a>
 </div>
 
 

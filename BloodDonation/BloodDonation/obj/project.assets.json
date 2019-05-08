@@ -2,6 +2,45 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "FluentValidation/8.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/8.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "8.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "8.3.0",
+          "Microsoft.AspNetCore.Mvc": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/8.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "8.3.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5587,6 +5626,48 @@
     }
   },
   "libraries": {
+    "FluentValidation/8.3.0": {
+      "sha512": "o/4Q+KL2HXGy0EXuYQbj5FPrM/OYYWLB9r9TDBlb9O4cQWLoy9Pz6/8MTdcCrhPHAUYKjBmTsI7tWSnaQiJJvQ==",
+      "type": "package",
+      "path": "fluentvalidation/8.3.0",
+      "files": [
+        ".signature.p7s",
+        "fluentvalidation.8.3.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net45/FluentValidation.dll",
+        "lib/net45/FluentValidation.xml",
+        "lib/netstandard1.1/FluentValidation.dll",
+        "lib/netstandard1.1/FluentValidation.xml",
+        "lib/netstandard1.6/FluentValidation.dll",
+        "lib/netstandard1.6/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/8.3.0": {
+      "sha512": "ahrqy7FqWC/KADCEdeWOM5jqztI4Tsc1d+cNFizKA3A7jbv+K1pp6S5IQiGlaC6nvDVshFdMCxScvwemcWr6cA==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/8.3.0",
+      "files": [
+        ".signature.p7s",
+        "fluentvalidation.aspnetcore.8.3.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.dll",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/8.3.0": {
+      "sha512": "tbWj0pc5mTzcyLfx2WqqS1itkEEwuTe7DTWj3c+CC+I8UVUEtCXHYLmd1uGiieLWLtB9C/he/V8jYJkm5KVv7Q==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/8.3.0",
+      "files": [
+        ".signature.p7s",
+        "fluentvalidation.dependencyinjectionextensions.8.3.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.xml",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -14511,6 +14592,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "FluentValidation.AspNetCore >= 8.3.0",
       "Microsoft.AspNetCore.All >= 2.1.3",
       "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 2.2.4",
@@ -14562,6 +14644,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[8.3.0, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.1.3, )"

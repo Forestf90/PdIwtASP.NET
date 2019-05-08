@@ -1,0 +1,19 @@
+﻿body {
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+th {
+    background-color: #f4b8c4;
+    border-bottom: 2px solid crimson;
+}
+tr {
+    border-bottom: 2px solid crimson;
+}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../images/blood_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
