@@ -43,7 +43,7 @@ namespace BloodDonation.Models
                             FirstName = values[0],
                             LastName = values[1],
                             Pesel = values[2],
-                            Gender =(Gender)Convert.ToInt32(values[3]),
+                            //Gender =(Gender)Convert.ToInt32(values[3]),
                             BloodGroup = (BloodGroup)Convert.ToInt32(values[4]),
                             Rh = (BloodRhFactor)Convert.ToInt32(values[5])
 

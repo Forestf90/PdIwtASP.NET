@@ -47,8 +47,6 @@ namespace BloodDonation.Migrations
                         .IsRequired()
                         .HasMaxLength(20);
 
-                    b.Property<int>("Gender");
-
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(20);

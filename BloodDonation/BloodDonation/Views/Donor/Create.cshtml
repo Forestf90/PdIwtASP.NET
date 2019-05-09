@@ -28,15 +28,15 @@
                 <input asp-for="Donor.Pesel" class="form-control" />
                 <span asp-validation-for="Donor.Pesel" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                @*<label asp-for="Donor.Gender" class="control-label"></label>*@
+            @*<div class="form-group">
+                @*<label asp-for="Donor.Gender" class="control-label"></label>
                 <label class="control-label">Płeć</label><br>
                 @foreach (var gen in ViewBag.Gender)
                 {
                     <label><input asp-for="Donor.Gender" value="@gen.Value" type="radio" /> @gen.Text</label><br>
                 }
                 <span asp-validation-for="Donor.Gender" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
                 @*<label asp-for="Donor.BloodGroup" class="control-label"></label>*@
                 <label class="control-label">Grupa krwi</label>

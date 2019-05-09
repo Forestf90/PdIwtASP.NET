@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BloodDonation.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,6 @@ namespace BloodDonation.Migrations
                     Pesel = table.Column<string>(nullable: false),
                     FirstName = table.Column<string>(maxLength: 20, nullable: false),
                     LastName = table.Column<string>(maxLength: 20, nullable: false),
-                    Gender = table.Column<int>(nullable: false),
                     BloodGroup = table.Column<int>(nullable: false),
                     Rh = table.Column<int>(nullable: false)
                 },

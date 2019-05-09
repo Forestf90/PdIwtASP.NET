@@ -106,7 +106,7 @@ namespace BloodDonation.Controllers
                     else
                     {
                         var temp = donor.NextDonation(donation.DonationType);
-                        string when = "Następnej dotacji można dokonać " + temp.Date.ToString();
+                        string when = "Następnej dotacji można dokonać " + temp.Date.ToString("d");
                         return RedirectToAction(nameof(Create), new { add = when });
                     }
                 }

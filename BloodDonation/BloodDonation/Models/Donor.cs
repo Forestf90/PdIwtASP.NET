@@ -22,8 +22,8 @@ namespace BloodDonation.Models
         //[Pesel]
         [RegularExpression(@"[0-9]{11}")]
         public string Pesel { get; set; }
-        [Required]
-        public Gender Gender { get; set; }
+        //[Required]
+        //public Gender Gender { get; set; }
         [Required]
         public BloodGroup BloodGroup { get; set; }
         [Required]
@@ -34,13 +34,22 @@ namespace BloodDonation.Models
         {
             Donations = new HashSet<Donation>();
         }
+        public Gender GetGender()
+        {
+            var peselChar = Pesel.ToArray();
 
+            if (Convert.ToInt32(peselChar[9]) % 2 == 0)
+            {
+                return Gender.Male;
+            }
+            else return Gender.Female;
+        }
         public string GetHonor()
         {
             DonationContext con = new DonationContext();
             int amount = con.Donations.Where(x=>x.Donor.Pesel==this.Pesel).Select(a => a.GetAmount()).Sum();
 
-            if (this.Gender == Gender.Female)
+            if (GetGender() == Gender.Female)
             {
                 if (amount >= 15000) return "/images/odznaki/I.png";
                 else if(amount >=10000) return "/images/odznaki/II.png";

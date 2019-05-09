@@ -23,7 +23,7 @@ namespace BloodDonation.Controllers
                 Pesel = n.Pesel,
                 FirstName = n.FirstName,
                 LastName = n.LastName,
-                Gender = n.Gender,
+                Gender = n.GetGender(),
                 BloodType = "/images/blood_groups/" + n.BloodGroup.ToString()
                                                     + n.Rh.ToString() + ".png",
                 Badge = n.GetHonor(),

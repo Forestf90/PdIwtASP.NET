@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodDonation.Migrations
 {
     [DbContext(typeof(DonationContext))]
-    [Migration("20190505095331_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20190509082527_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,8 +48,6 @@ namespace BloodDonation.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(20);
-
-                    b.Property<int>("Gender");
 
                     b.Property<string>("LastName")
                         .IsRequired()

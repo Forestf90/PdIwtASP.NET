@@ -68,7 +68,7 @@ using BloodDonation.Models;
             WriteLiteral("\r\n<h2>Lista donacji</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(131, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a16651fb18e4b89953e5855a6c5fd29", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd3a20fd159642859d758f02497fa3c1", async() => {
                 BeginContext(154, 13, true);
                 WriteLiteral("Dodaj donacje");
                 EndContext();
@@ -340,7 +340,7 @@ WriteAttributeValue(" ", 2665, nextDisabled, 2666, 13, false);
         <li>");
             EndContext();
             BeginContext(3056, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bec186707b9484899c90690c8bd5b49", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e28495acfed4b29b74e5caf60270f86", async() => {
                 BeginContext(3104, 1, true);
                 WriteLiteral("5");
                 EndContext();
@@ -368,7 +368,7 @@ WriteAttributeValue(" ", 2665, nextDisabled, 2666, 13, false);
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(3128, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39364d05f78d47e993f391e78da061fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5473ef83c6e4daf8645a09bcad5ea92", async() => {
                 BeginContext(3177, 2, true);
                 WriteLiteral("10");
                 EndContext();
@@ -396,7 +396,7 @@ WriteAttributeValue(" ", 2665, nextDisabled, 2666, 13, false);
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(3202, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "857848e7560a4037b39b94f509f079f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01acc70eaeba475b828c0068867bf487", async() => {
                 BeginContext(3251, 2, true);
                 WriteLiteral("15");
                 EndContext();
@@ -424,7 +424,7 @@ WriteAttributeValue(" ", 2665, nextDisabled, 2666, 13, false);
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(3276, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3295cd7767a4efcbe728be579d3a583", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b8e5394afcf428bbd642312fbbc4af9", async() => {
                 BeginContext(3325, 2, true);
                 WriteLiteral("20");
                 EndContext();
